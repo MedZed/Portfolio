@@ -10,70 +10,20 @@
     <meta name="author" content="Zarroug Mohamed">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="Img/Favicon.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <!-- Emoji -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <!-- Fontawesome5 -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+
 
 
     <style>
-        .navbar-dark {
-            background-color: #0062cc !important;
-        }
-
-        button.navbar-toggler {
-
-            color: #ffffff !important;
-            border: none;
-
-        }
-
-        button.navbar-toggler:focus {
-            outline: none !important;
-        }
-
-        .jumbotron {
-            background-color: #0062cc;
-            border-radius: 0px;
-        }
-
-        .btn-outline-secondary {
-            border: none;
-            background-color: #0062cc !important;
-            color: #ffffff;
-            outline: none !important;
-        }
-
-        .btn-secondary {
-            border: 2px solid #0062cc;
-            background-color: #ffffff;
-            color: #0062cc;
-            border-radius: 0px;
-            outline: none !important;
-        }
-
-        .btn-secondary:hover {
-            border: 2px solid #ffffff;
-            background-color: #0062cc;
-            color: #ffffff;
-        }
-
-        .btn-secondary:active {
-            border: 2px solid #ffffff;
-            background-color: #0062cc;
-            color: #ffffff;
-        }
-
-        .typed-cursor {
-            display: none;
-        }
-
-        a:hover {
-            text-decoration: none !important;
-        }
     </style>
 </head>
 
@@ -124,7 +74,9 @@
             <div class="container d-flex justify-content-between">
                 <a href="#" class="navbar-brand d-flex align-items-center">
                     <!-- Brand here ex: med zarroug -->
-                    <img style="max-height:40px; max-width:40px;" class="animated infinite pulse" src="Img/Logo.png" alt="logo">
+                    <!-- med <i class="far fa-dot-circle animated infinite flipInY brand"></i> -->
+
+                    <img style="height:50px; width:50px;" class="animated wobble" src="Img/logo.svg" alt="logo">
                 </a>
                 <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
                     aria-expanded="true" aria-label="Toggle navigation">
@@ -149,198 +101,199 @@
     </header>
     <main role="main">
 
-        <section class="jumbotron text-center">
-            <div class="container">
+        <section class="jumbotron">
+            <div id="cont-info">
+                <p id="info" class="lead text-white">Hi there!
+                    <i class="em-svg em-wave animated tada infinite"></i>
+                    My name is Mohamed Zarroug. I make web applications.</p>
+            </div>
+            <div class="container text-center">
                 <!-- <h1 class="jumbotron-heading text-white">Mohamed Zarroug</h1> -->
 
-                <img class="animated bounceIn img-fluid mb-2 d-block mx-auto rounded-circle img-thumbnail" src="https://i.imgur.com/eB1WXB6.jpg"
-                    alt="">
+                <!-- <img class="animated bounceIn img-fluid mb-2 d-block mx-auto rounded-circle img-thumbnail" src="https://i.imgur.com/eB1WXB6.jpg"alt=""> -->
 
 
-
-                <p>
-                    <a href="#" class="btn btn-secondary my-2">
-                        Download CV
-                        <i class="fas fa-file-pdf"></i>
-                    </a>
-                    <a href="#" class="btn btn-secondary my-2">
-                        </i>Go to LinkedIn
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </p>
-                <p id="typed" class="lead text-white">Hi there! My name is Mohamed Zarroug. I am a Freelance Web Designer/Developer based in Gafsa, Tunisia</p>
+                <a href="#" class="btn btn-secondary my-2">
+                    Download CV
+                    <i class="fas fa-id-badge"></i>
+                </a>
+                <a href="#" class="btn btn-secondary my-2">
+                    </i>Go to LinkedIn
+                    <i class="fab fa-linkedin"></i>
+                </a>
 
             </div>
+
         </section>
 
         <div class="album py-5 bg-light">
             <div class="container">
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-                                style="height: 100%; width: 100%; display: block;" src="Img/1.jpg" data-holder-rendered="true">
-                            <div class="card-body text">
-                                <p class="card-text">Youtube-Mp3 is an opensource Youtube to mp3 downloader using Electron framework to build
-                                    desktop apps with web technologies.
-                                    <br>
-                                    <div class="text-center">
-                                        <strong>Used technologies</strong>
-                                        <br>
-                                        <i class="fab fa-js"></i>
-                                        <i class="fab fa-html5"></i>
-                                        <i class="fab fa-css3-alt"></i>
-                                        <i class="fab fa-node-js"></i>
-                                    </div>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View in Github
-                                            <i class="fab fa-github"></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="card-deck">
+
+                    <div class="card text-secondary">
+                        <img class="card-img-top" src="Img/1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Youtube-mp3</h5>
+                            <p class="card-text">Opensource Youtube to mp3 downloader using Electron framework to build desktop apps with web
+                                technologies.</p>
                         </div>
+                        <div class="text-center">
+                            <strong>Used technologies</strong>
+                            <br>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <br>
+                        <a href="" class="text-white">
+                            <div class="card-footer text-center">
+                                View on Github
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
+
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-                                style="height: 100%; width: 100%; display: block;" src="Img/2.jpg" data-holder-rendered="true">
-                            <div class="card-body text">
-                                <p class="card-text">Headlines is a news desktop app using newsapi.org api and Electron framework to build desktop
-                                    apps with web technologies.
-                                    <br>
-                                    <div class="text-center">
-                                        <strong>Used technologies</strong>
-                                        <br>
-                                        <i class="fab fa-js"></i>
-                                        <i class="fab fa-html5"></i>
-                                        <i class="fab fa-css3-alt"></i>
-                                        <i class="fab fa-node-js"></i>
-                                    </div>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View in Github
-                                            <i class="fab fa-github"></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="card text-secondary">
+                        <img class="card-img-top" src="Img/2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Headlines</h5>
+                            <p class="card-text">A news desktop app using newsapi.org api and Electron framework to build desktop apps with web
+                                technologies.
+                            </p>
                         </div>
+                        <div class="text-center">
+                            <strong>Used technologies</strong>
+                            <br>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <br>
+                        <a href="" class="text-white">
+                            <div class="card-footer text-center">
+                                View on Github
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
+
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-                                style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_161e6054d6f%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_161e6054d6f%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8359375%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                                data-holder-rendered="true">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-                                    This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View in Github
-                                            <i class="fab fa-github"></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="card text-secondary">
+                        <img class="card-img-top" src="https://placeimg.com/640/430/any/*" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Project title</h5>
+                            <p class="card-text">Opensource Youtube to mp3 downloader using Electron framework to build desktop apps with web
+                                technologies.</p>
                         </div>
+                        <div class="text-center">
+                            <strong>Used technologies</strong>
+                            <br>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <br>
+                        <a href="" class="text-white">
+                            <div class="card-footer text-center">
+                                View on Github
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
+
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-                                style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_161e6054d6f%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_161e6054d6f%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8359375%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                                data-holder-rendered="true">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-                                    This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View in Github
-                                            <i class="fab fa-github"></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="card-deck">
+
+                    <div class="card text-secondary">
+                        <img class="card-img-top" src="https://placeimg.com/640/430/any/2" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Project title</h5>
+                            <p class="card-text">Opensource Youtube to mp3 downloader using Electron framework to build desktop apps with web
+                                technologies.</p>
                         </div>
+                        <div class="text-center">
+                            <strong>Used technologies</strong>
+                            <br>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <br>
+                        <a href="" class="text-white">
+                            <div class="card-footer text-center">
+                                View on Github
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
+
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-                                style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_161e6054d6f%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_161e6054d6f%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8359375%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                                data-holder-rendered="true">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-                                    This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View in Github
-                                            <i class="fab fa-github"></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="card text-secondary">
+                        <img class="card-img-top" src="https://placeimg.com/640/430/any/3" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Project title</h5>
+                            <p class="card-text">Opensource Youtube to mp3 downloader using Electron framework to build desktop apps with web
+                                technologies.</p>
                         </div>
+                        <div class="text-center">
+                            <strong>Used technologies</strong>
+                            <br>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <br>
+                        <a href="" class="text-white">
+                            <div class="card-footer text-center">
+                                View on Github
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
+
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-                                style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_161e6054d6f%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_161e6054d6f%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8359375%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                                data-holder-rendered="true">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-                                    This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View in Github
-                                            <i class="fab fa-github"></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="card text-secondary">
+                        <img class="card-img-top" src="https://placeimg.com/640/430/any/4" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Project title</h5>
+                            <p class="card-text">Opensource Youtube to mp3 downloader using Electron framework to build desktop apps with web
+                                technologies.</p>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-                                style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_161e6054d6f%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_161e6054d6f%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8359375%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                                data-holder-rendered="true">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-                                    This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View in Github
-                                            <i class="fab fa-github"></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="text-center">
+                            <strong>Used technologies</strong>
+                            <br>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-node-js"></i>
                         </div>
+                        <br>
+                        <a href="" class="text-white">
+                            <div class="card-footer text-center">
+                                View on Github
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
 
     </main>
-    <footer class="text-muted">
-        <div class="container">
-            <p class="float-right">
-                <a href="#">Back to top</a>
+    <footer>
+        <div class="container text-white">
+            <p class="float-right ">
+                <a href="#">
+                    <i style="font-size:35px;" class=" text-white fas fa-arrow-alt-circle-up"></i>
+
+                </a>
             </p>
-            <p class="text-center">Hand made with
-                <i style="color:#f02424;" class="fab fa-gratipay"></i> by me using Bootstrap4 .
-                <b> Zarroug Med </b>. Medy484@gmail . 2018 </p>
+            <p class="text-center" style="font-size:13px;">Hand made with
+                <i style="color:#f02424;" class="fas fa-heart animated flash infinite"></i> by me using Bootstrap4 . Medy484@gmail . 2018 </p>
         </div>
     </footer>
     <!-- Optional JavaScript -->
