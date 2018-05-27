@@ -113,22 +113,22 @@ text-shadow: 1px 1px 1px #00000040;
         }
         #cont-info {
             position: relative;
-            background-image: linear-gradient(-170deg,#07d4c276, #27095576) ;
+            background-image: linear-gradient(-170deg,rgba(7, 212, 195, 0.62), rgba(39, 9, 85, 0.75)) ;
             border-radius: 50px;
 
         }     .card{
-            border-radius: 15px !important;
+            border-radius: 12px !important;
        }
 .card-img-top{
-    border-top-left-radius: 15px !important;
-    border-top-right-radius: 15px !important; 
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important; 
 }
         .card-footer{
             background-image: linear-gradient(-170deg,#07d4c2, #270955) !important;
             border-top: none !important;
             transition: 0.3s;
-            border-bottom-left-radius: 15px !important;
-            border-bottom-right-radius: 15px !important; 
+            border-bottom-left-radius: 12px !important;
+            border-bottom-right-radius: 12px !important; 
 
 
         }
