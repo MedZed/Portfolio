@@ -10,7 +10,10 @@
     <meta name="author" content="Zarroug Mohamed">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="src/assets/images/Favicon.png" type="image/png" sizes="16x16">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
     <!-- Emoji -->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <!-- Fontawesome5 -->
@@ -70,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="navbar navbar-dark bg-dark box-shadow ">
             <div class="container d-flex justify-content-between">
                 <a href="#" class="navbar-brand d-flex align-items-center">
                     <!-- Brand here ex: med zarroug -->
@@ -101,7 +104,7 @@
     </header>
     <main role="main">
 
-        <section class="jumbotron">
+        <section class="parallax-window jumbotron" data-parallax="scroll" data-image-src="src/assets/images/bg.PNG">
             <div id="cont-info">
                 <p id="info" class="lead text-white">Hi there!
                     <i class="em-svg em-wave animated tada infinite"></i>
@@ -126,37 +129,35 @@
 
         </section>
 
-        <!-- <section class="album py-5 bg-light">
-            <div class="container">
-                <div class="row text-center social">
-                    <div class="col-md-4">
-                        <a href="" class="cir text-white">
-                            <i class="fab fa-dribbble"></i>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                            <a href="" class="cir text-white">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>                    </div>
-                    <div class="col-md-4">
-                            <a href="" class="cir text-white">
-                                    <i class="fab fa-github"></i>
-                                </a>                    </div>
-                </div>
-            </div>
-        </section> -->
 
-        <div class="album py-5 bg-light">
-            <div class="container">
-                    <!-- <h1 class="text-center">My work</h1> -->
+        <!-- <div class="container">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="src/assets/images/bg.PNG"></div>
 
+        </div> -->
+
+        <div class="album py-5 my-5 bg-light">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="text-center">MY WORK</h1>
+                <br>
+                <p class="h5" >Those projects are some of the work I make you can visite my
+                    <a class="btn" href="https://dribbble.com/Zarroug">dribbble <i class="fab fa-dribbble"></i></a> account to see some of my design work or maybe view my
+                    <a class="btn" href="https://github.com/MedZed">github
+                        <i class="fab fa-github"></i>
+                    </a> account for more projects.</p>
+                <br>
+                <br>
+
+                <br>
                 <div class="card-deck">
 
-
-
-
                     <div class="card text-secondary">
-                        <img class="card-img-top" src="src/assets/images/9.JPG" alt="Card image cap">
+                        <img class="card-img-top" id="c1">
                         <div class="card-body">
                             <h5 class="card-title text-center">My Dribbble account</h5>
                             <p class="card-text">My dribbble account where I show my graphic design work</p>
@@ -164,17 +165,17 @@
                         <br>
                         <a href="https://dribbble.com/Zarroug" target="_blank" class="text-white">
                             <div class="card-footer text-center">
-                                View Dribbble 
+                                View Dribbble
                                 <i class="fab fa-dribbble"></i>
                             </div>
                         </a>
 
                     </div>
                     <div class="card text-secondary">
-                        <img class="card-img-top" src="src/assets/images/8.JPG" alt="Card image cap">
+                        <img class="card-img-top" id="c2">
                         <div class="card-body">
                             <h5 class="card-title text-center">Weather web app</h5>
-                            <p class="card-text">Weather web (UI) displaying local weather using The Free Code Camp Weather API 
+                            <p class="card-text">Weather web (UI) displaying local weather using The Free Code Camp Weather API
                             </p>
                         </div>
                         <div class="text-center">
@@ -191,20 +192,27 @@
                                 <i class="fas fa-globe"></i>
                             </div>
                         </a>
-                    
+
                     </div>
                     <div class="card text-secondary">
-                        <img class="card-img-top" src="src/assets/images/6.png" alt="Card image cap">
+                        <img class="card-img-top" id="c4">
                         <div class="card-body">
-                            <h5 class="card-title text-center">View more</h5>
-                            <p class="card-text">My github account where you can find more stuff I made</p>
+                            <h5 class="card-title text-center">Headlines</h5>
+                            <p class="card-text">A news web app with categories using the newsapi.org API</p>
                         </div>
 
+                        <div class="text-center">
+                            <strong>Used technologies</strong>
+                            <br>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
                         <br>
-                        <a href="https://github.com/MedZed" target="_blank" class="text-white">
+                        <a href="https://Medzed.github.io/Headlines_web" target="_blank" class="text-white">
                             <div class="card-footer text-center">
-                                View on Github
-                                <i class="fab fa-github"></i>
+                                View App
+                                <i class="fas fa-globe"></i>
                             </div>
                         </a>
 
@@ -213,7 +221,7 @@
                 <div class="card-deck">
 
                     <div class="card text-secondary">
-                        <img class="card-img-top" src="src/assets/images/1.jpg" alt="Card image cap">
+                        <img class="card-img-top" id="c5">
                         <div class="card-body">
                             <h5 class="card-title text-center">Youtube-mp3</h5>
                             <p class="card-text">Opensource Youtube to mp3 downloader using Electron framework to build desktop apps with web
@@ -237,13 +245,12 @@
                         </a>
 
                     </div>
-                    
+
                     <div class="card text-secondary">
-                        <img class="card-img-top" src="src/assets/images/2.jpg" alt="Card image cap">
+                        <img class="card-img-top" id="c3">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Headlines</h5>
-                            <p class="card-text">A news desktop app using newsapi.org api and Electron framework to build desktop apps with web
-                                technologies.
+                            <h5 class="card-title text-center">Travel agency design</h5>
+                            <p class="card-text">Oussama travel agency website design and templating
                             </p>
                         </div>
                         <div class="text-center">
@@ -252,19 +259,18 @@
                             <i class="fab fa-js"></i>
                             <i class="fab fa-html5"></i>
                             <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-node-js"></i>
                         </div>
                         <br>
-                        <a href="https://github.com/MedZed/Electron-Headlines" target="_blank" class="text-white">
+                        <a href="https://medzed.github.io/Oussama_travel_template/" target="_blank" class="text-white">
                             <div class="card-footer text-center">
-                                View on Github
-                                <i class="fab fa-github"></i>
+                                View Template
+                                <i class="fas fa-globe"></i>
                             </div>
                         </a>
 
                     </div>
                     <div class="card text-secondary">
-                        <img class="card-img-top" src="src/assets/images/4.png" alt="Card image cap">
+                        <img class="card-img-top" id="c6">
                         <div class="card-body">
                             <h5 class="card-title text-center">My portfolio</h5>
                             <p class="card-text">My personal portfolio, a responsive design with the help of Bootstrap4 and modern gradient look
@@ -279,7 +285,7 @@
                             <i class="fab fa-css3-alt"></i>
                         </div>
                         <br>
-                        <a href="" class="text-white">
+                        <a href="https://github.com/MedZed/Portfolio" class="text-white">
                             <div class="card-footer text-center">
                                 View on Github
                                 <i class="fab fa-github"></i>
@@ -291,7 +297,7 @@
                 <div class="card-deck">
 
                     <div class="card text-secondary">
-                        <img class="card-img-top" src="src/assets/images/3.jpg" alt="Card image cap">
+                        <img class="card-img-top" id="c7">
                         <div class="card-body">
                             <h5 class="card-title text-center">Quick English Test</h5>
                             <p class="card-text">A simple, fun and quick english test composed from 20 questions for my college english club.
@@ -314,7 +320,7 @@
 
                     </div>
                     <div class="card text-secondary">
-                        <img class="card-img-top" src="src/assets/images/5.JPG" alt="Card image cap">
+                        <img class="card-img-top" id="c8">
                         <div class="card-body">
                             <h5 class="card-title text-center">English Club Website</h5>
                             <p class="card-text">English Club website made for my college english club</p>
@@ -337,7 +343,7 @@
 
                     </div>
                     <div class="card text-secondary">
-                        <img class="card-img-top" src="src/assets/images/6.png" alt="Card image cap">
+                        <img class="card-img-top" id="c9">
                         <div class="card-body">
                             <h5 class="card-title text-center">View more</h5>
                             <p class="card-text">My github account where you can find more stuff I made</p>
@@ -377,15 +383,16 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- Parallex JS -->
+    <script src="src/js/parallex.js"></script>
 
+    <script>
 
+        $(document).ready(function () {
+            $('.parallax-window').parallax({ imageSrc: 'src/assets/images/bg.PNG' });
 
+        });
+    </script>
 </body>
 
 </html>
-
-
-
-
-
-
