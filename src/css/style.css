@@ -1,8 +1,8 @@
         .bg-dark{
-        font-family: Josefin Sans, Helvetica, sans-serif;
+        font-family: Montserrat, Helvetica, sans-serif;
         }
         .navbar-dark {
-            font-family: Josefin Sans, Helvetica, sans-serif;
+            font-family: Montserrat, Helvetica, sans-serif;
             /* background-color: #0062cc !important; */
             background-image: linear-gradient(-170deg,#07d4c2, #270955);
             box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .07), 0 0.5px 5px 0 rgba(0, 0, 0, .06), 0 1px 2px -2px rgba(0, 0, 0, .1);
@@ -91,7 +91,69 @@
             background-image: linear-gradient(-170deg,#07d4c2, #270955) !important;
 
         }
-
+        .btn-dribbble{
+            color:#c32361;
+            border:2px solid #c32361;
+            border-radius: 25px;
+            font-size: 12px;
+            height:28px;
+            line-height: 13px;
+        }
+        .btn-dribbble:hover{
+            color:#ffffff;
+            background-color: #c32361;
+        }
+        .btn-github{
+            color:#24292e;
+            border:2px solid #24292e;
+            border-radius: 25px;
+            font-size: 12px;
+            height:28px;
+            line-height: 13px;
+        }
+        .btn-github:hover{
+            color:#ffffff;
+            background-color: #24292e;
+        }
+        .btn-email{
+            color:#00978a;
+            border:2px solid #00978a;
+            border-radius: 25px;
+            font-size: 12px;
+            height:28px;
+            line-height: 13px;
+        }
+        .btn-email:hover{
+            color:#ffffff;
+            background-color: #00978a;
+        }
+        .btn-cv{
+            color:#2d0097;
+            border:2px solid #2d0097;
+            border-radius: 25px;
+            font-size: 12px;
+            height:28px;
+            line-height: 13px;
+        }
+        .btn-cv:hover{
+            color:#ffffff;
+            background-color: #2d0097;
+        }
+        .btn-linkedin{
+            color:#004b7c;
+            border:2px solid #004b7c;
+            border-radius: 25px;
+            font-size: 12px;
+            height:28px;
+            line-height: 13px;
+        }
+        .btn-linkedin:hover{
+            color:#ffffff;
+            background-color: #004b7c;
+        }
+        .hi{
+            line-height: 30px;
+        }
         .typed-cursor {
             display: none;
         }
@@ -134,17 +196,20 @@ text-shadow: 1px 1px 1px #00000040;
     border-top-left-radius: 14px !important;
     border-top-right-radius: 14px !important;
     height: 220px;
+    transition: all 0.5s ease-in-out;
+    background-size: 120%;
     background-position: center;
-    background-size: cover;
-    /* transition:all 1s ;
-    -webkit-transition:all 1s ;
-    -o-transition:all 1s ;
-    -moz-transition:all 1s ; */
+    background-repeat: no-repeat;
+    /* background-color: rgba(7, 212, 195, 0.62); */
 
 }
-.card-img-top:hover{
+/* .card-img-top:hover{
 
     background-size:150%;
+
+} */
+.card:hover .card-img-top, .card:focus .card-img-top {
+    background-size: 160%;
 
 }
 
@@ -224,17 +289,45 @@ padding: 50px;
             /* min-height: 400px; */
             background: transparent !important;
         } 
-        .mywrk{
-            background-image: linear-gradient(-170deg,#07d4c2, #270955) !important;
-             min-height:200px; line-height: 100px
-        }
-        .mywrk .container{
-            background: #ffffff;
-            border-radius: 50px;
-            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .07), 0 0.5px 5px 0 rgba(0, 0, 0, .06), 0 1px 2px -2px rgba(0, 0, 0, .1);
-
-        }
         .mywrk h1{
-            line-height: 300px;
+            line-height: 200px;
             font-family: 'Roboto', Arial;
+        }
+
+        .skills {
+            text-align: left;
+            padding: 3px 10px;
+            margin: 5px 0;
+            line-height:15px;
+            color: white;
+            border-radius: 25px;
+            font-family: 'Roboto', Arial;
+            font-size: 11px;
+                  }
+          
+          .html {width: 90%; background-color: #e74c3c;}
+          .css {width: 80%; background-color: #2980b9;}
+          .js {width: 70%; background-color: #f1c40f;}
+          .php {width: 60%; background-color: #8e44ad;}
+
+          .more_skills{
+              margin:15px auto;
+              width:80%;
+              
+          }
+          .btn-tag{
+            color:#7f8c8d;
+            border:2px solid #7f8c8d;
+            margin:3px 0;
+            border-radius: 25px;
+            font-size: 11px;
+            height:24px;
+            line-height: 9px;
+        }
+        .btn-tag:hover{
+            color:#ffffff;
+            background-color: #7f8c8d;
+        }
+        #up{
+            cursor: pointer;
         }
