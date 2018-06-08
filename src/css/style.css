@@ -331,3 +331,15 @@ padding: 50px;
         #up{
             cursor: pointer;
         }
+        .down{
+            width: 60px;
+            height: 60px;
+            border-radius:100%;
+            line-height: 60px;
+            /* border:2px solid #ffffff; */
+            margin:20px auto;
+            font-size: 1rem;
+            cursor: pointer;
+            color:#ffffff;
+
+        }

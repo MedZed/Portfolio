@@ -124,6 +124,9 @@
                     </i>Go to LinkedIn
                     <i class="fab fa-linkedin"></i>
                 </a>
+                <div class="down">
+                    <i class="fa fa-angle-double-down  animated bounce infinite"></i>
+                </div>
             </div>
         </section>
 
@@ -135,6 +138,8 @@
 
         <div class="album py-5 my-5 bg-light">
             <div class="container">
+                <br>
+                <br>
                 <br>
                 <br>
                 <h1 class="text-center ">Who am I?</h1>
@@ -179,16 +184,26 @@
                 <br>
                 <div class="more_skills">
                     <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=creativity">#Graphic design
-                    </a>                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Graphic design">#Photoshop
-                    </a>                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Illustratop">#Illustratop
-                    </a>                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Responsive design">#Responsive design
-                    </a>                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Jquery">#Jquery
-                    </a>                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Web frameworks">#Web frameworks
-                    </a>                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Teamwork">#Teamwork
-                    </a>                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Degital marketing">#Degital marketing
-                    </a>                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Critical thinking">#Critical thinking
-                    </a>                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Problem solving">#Problem solving
-                    </a>                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Emotional intelligence">#Emotional intelligence
+                    </a>
+                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Graphic design">#Photoshop
+                    </a>
+                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Illustratop">#Illustratop
+                    </a>
+                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Responsive design">#Responsive design
+                    </a>
+                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Jquery">#Jquery
+                    </a>
+                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Web frameworks">#Web frameworks
+                    </a>
+                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Teamwork">#Teamwork
+                    </a>
+                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Degital marketing">#Degital marketing
+                    </a>
+                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Critical thinking">#Critical thinking
+                    </a>
+                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Problem solving">#Problem solving
+                    </a>
+                    <a class="btn btn-tag" target="_blank" href="https://www.google.tn/search?q=Emotional intelligence">#Emotional intelligence
 
                     </a>
                 </div>
@@ -490,6 +505,12 @@
             // Scroll animation on click
             $('#up').click(function () {
                 $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+            $('.down').click(function () {
+                const height = window.innerHeight;
+                // const vhPixels = height * 0.5
+                $("html, body").animate({ scrollTop: height + (height / 5) }, 600);
                 return false;
             });
         });
